@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'd-dinregular';
+    src: url('fonts/d-din-webfont.woff2') format('woff2'),
+         url('fonts/d-din-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  line-height: 1.5;
+}
+
+body {
+    font-family: d-dinregular, system-ui;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.image-splash {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-image: url("img/olivia-rosth--9c5jzDszTw-unsplash.jpg");
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.highlight {
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    opacity: 50%;
+    margin-top: 30vh;
+    height: 150px;
+    justify-content: center;
+}
+
+.highlight-content {
+    display: flex;
+    align-items: center;
+}
+
+.odin-image {
+    height: 120px;
+}
+
+.photo-credit {
+    padding-bottom: 10px;
+    color: rgba(219, 255, 223, 0.678);
+    align-self: center;
+}
+
+.photo-credit a:link {
+    color: rgba(219, 255, 223, 0.678);
+}
+
+.photo-credit a:hover {
+    color: rgba(228, 235, 228, 0.897);
+}
+
+.photo-credit a:visited {
+    color: rgba(115, 192, 113, 0.342);
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: space-between;
+}
