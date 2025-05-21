@@ -33,16 +33,18 @@ body {
     opacity: 50%;
     margin-top: 30vh;
     height: 150px;
-    justify-content: center;
+
 }
 
 .highlight-content {
     display: flex;
+    flex: 1;
     align-items: center;
+    justify-content: space-evenly;
 }
 
-.odin-image {
-    height: 120px;
+.highlight-content img {
+    height: 90%;
 }
 
 .photo-credit {
@@ -68,4 +70,17 @@ body {
     flex-direction: column;
     flex: 2;
     justify-content: space-between;
+}
+
+.message {
+    display: flex;
+}
+
+.signup-form {
+    display: flex;
+
+}
+
+.account-info {
+    display: flex;
 }
