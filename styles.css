@@ -72,15 +72,59 @@ body {
     justify-content: space-between;
 }
 
-.message {
+.info-container-message {
     display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 34px;
+}
+
+.signup-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 34px;
 }
 
 .signup-form {
     display: flex;
+}
 
+.signup-form input {
+    border: 1px #a8a8a8 solid;
+    border-radius: 4px;
+    height: 21px;
+    width: 250px;
+    outline: none;
+}
+
+.signup-form label {
+    font-size: small;
+}
+
+input:focus {
+    border: 1px #6e81ee solid;
+    box-shadow: 1px 1px 2px;
+}
+
+input[type="password"]:invalid {
+    border: 1px #d33e3e solid;
+}
+
+.form-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
 }
 
 .account-info {
     display: flex;
+    flex: 1;
+    margin: 34px;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up!</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="image-splash">
@@ -22,11 +22,35 @@
         </div>
     </div>
     <div class="info-container">
-        <div class="message">
-            message
+        <div class="info-container-message">
+            <h2>Learn web development and create fake forms just like this.</h2>
+            <h2>Sign up <em>now</em>.</h2>
         </div>
-        <div class="signup-form">
-            signup-form
+        <div class="signup-container">
+            <h2>Do it.</h2>
+            <form action="" method="get" class="signup-form">
+                <div class="form-left">
+                    <label for="first-name">FIRST NAME</label>
+                    <input id="first-name" name="first-name" type="text"/>
+                    <br>
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email" placeholder="odin@project.com"/>
+                    <br>
+                    <label for="password">PASSWORD</label>
+                    <input id="password" name="password" type="password"/>
+                </div>
+
+                <div class="form-right">
+                    <label for="last-name">LAST NAME</label>
+                    <input id="last-name" name="last-name" type="text"/>
+                    <br>
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input id="phone-number" name="phone-number" type="tel"/>
+                    <br>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input id="confirm-password" name="confirm-password" type="password"/>
+                </div>
+            </form>
         </div>
         <div class="account-info">
             account-info
