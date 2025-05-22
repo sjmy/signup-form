@@ -23,37 +23,48 @@
     </div>
     <div class="info-container">
         <div class="info-container-message">
-            <h2>Learn web development and create fake forms just like this.</h2>
-            <h2>Sign up <em>now</em>.</h2>
+            <h2>Learn web development and create practice forms <em>just like this.</em></h2>
+            <h2>Sign up now.</h2>
         </div>
         <div class="signup-container">
             <h2>Do it.</h2>
-            <form action="" method="get" class="signup-form">
-                <div class="form-left">
-                    <label for="first-name">FIRST NAME</label>
-                    <input id="first-name" name="first-name" type="text"/>
-                    <br>
-                    <label for="email">EMAIL</label>
-                    <input id="email" name="email" type="email" placeholder="odin@project.com"/>
-                    <br>
-                    <label for="password">PASSWORD</label>
-                    <input id="password" name="password" type="password"/>
+            <form action="" method="get" class="form">
+                <div class="row-1">
+                    <div class="labels">
+                        <label for="first-name">FIRST NAME</label>
+                        <input id="first-name" name="first-name" type="text"/>
+                    </div>
+                    <div class="labels">
+                        <label for="last-name">LAST NAME</label>
+                        <input id="last-name" name="last-name" type="text"/>
+                    </div>
                 </div>
-
-                <div class="form-right">
-                    <label for="last-name">LAST NAME</label>
-                    <input id="last-name" name="last-name" type="text"/>
-                    <br>
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input id="phone-number" name="phone-number" type="tel"/>
-                    <br>
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input id="confirm-password" name="confirm-password" type="password"/>
+                <div class="row-2">
+                    <div class="labels">
+                        <label for="email">EMAIL*</label>
+                        <input id="email" name="email" type="email" placeholder="odin@project.com" required/>
+                    </div>
+                    <div class="labels">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input id="phone-number" name="phone-number" type="tel"/>
+                    </div>
+                </div>
+                    <div class="row-3">
+                        <div class="labels">
+                            <label for="password">PASSWORD* <em>(between 8 and 16 characters)</em></label>
+                            <input id="password" name="password" type="password" pattern="[\w]{8,16}" required/>
+                        </div>
+                        <div class="labels">
+                            <label for="confirm-password">CONFIRM PASSWORD*</label>
+                            <input id="confirm-password" name="confirm-password" type="password" pattern="[\w]{8,16}" required/>
+                        </div>
                 </div>
             </form>
         </div>
         <div class="account-info">
-            account-info
+            <label for="submit"></label>
+            <input id="submit" name="submit" type="submit" value="Create Account"/>
+            <h3>Already have an account? <a href="https://www.theodinproject.com">Log in</a></h3>
         </div>
     </div>
 </body>

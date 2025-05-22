@@ -81,17 +81,19 @@ body {
 }
 
 .signup-container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     margin: 34px;
 }
 
-.signup-form {
-    display: flex;
+label {
+    font-size: small;
 }
 
-.signup-form input {
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
     border: 1px #a8a8a8 solid;
     border-radius: 4px;
     height: 21px;
@@ -99,32 +101,60 @@ body {
     outline: none;
 }
 
-.signup-form label {
-    font-size: small;
-}
-
 input:focus {
     border: 1px #6e81ee solid;
-    box-shadow: 1px 1px 2px;
+    box-shadow: 1px 1px 2px rgb(172, 172, 172);
+}
+
+input[type="password"]:valid {
+    border: 1px #266505 solid;
 }
 
 input[type="password"]:invalid {
     border: 1px #d33e3e solid;
 }
 
-.form-left {
-    display: flex;
-    flex-direction: column;
-}
 
-.form-right {
+.row-1,
+.row-2,
+.row-3 {
     display: flex;
-    flex-direction: column;
-    margin-left: 100px;
+    justify-content:space-around;
 }
 
 .account-info {
     display: flex;
+    flex-direction: column;
     flex: 1;
+    align-items: center;
     margin: 34px;
+}
+
+.account-info a {
+    color: #266505;
+    text-decoration: none;
+}
+
+.account-info a:hover {
+    color: #4485229d;
+}
+
+.account-info a:visited {
+    color: #3f6928;
+}
+
+input[type="submit"] {
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+    color: #e2dfd5;
+    background-color: #266505;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px rgb(172, 172, 172);
+    cursor: pointer;
+}
+
+.submit :active {
+    transform: translateY(1px);
 }
