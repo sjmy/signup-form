@@ -106,14 +106,13 @@ input:focus {
     box-shadow: 1px 1px 2px rgb(172, 172, 172);
 }
 
-input[type="password"]:valid {
+input:user-valid {
     border: 1px #266505 solid;
 }
 
-input[type="password"]:invalid {
+input:user-invalid {
     border: 1px #d33e3e solid;
 }
-
 
 .row-1,
 .row-2,
